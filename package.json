@@ -1,0 +1,24 @@
+{
+    "name": "github-actions-tp",
+    "version" : "1.0.0",
+    "description": "",
+    "main": "src/app.js",
+ 
+    "scripts": {
+        "start": "node src/app.js",
+        "test": "jest --coverage",
+        "lint": "eslint src/"
+    },
+ 
+    "dependencies": {
+        "express": "5.2.1"
+    },
+
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "jest": "30.3.0",
+        "supertest": "7.2.2"
+    }
+
+    
+}
