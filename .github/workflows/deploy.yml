@@ -12,7 +12,6 @@ jobs:
     deploy-staging:
         needs: ci #bloqué tant que CI ne passe pas
         runs-on: ubuntu-latest
-        environment: staging
  
         steps:
             - uses: actions/checkout@v4
@@ -27,7 +26,6 @@ jobs:
     deploy-production:
         needs: deploy-staging
         runs-on: ubuntu-latest
-        environment: production
 
         steps:
             - uses: actions/checkout@v4
